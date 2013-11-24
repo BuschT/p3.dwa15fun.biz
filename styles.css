@@ -1,0 +1,59 @@
+body {
+	background-image:url('http://a1.espncdn.com/prod/assets/bg_v2/bg_frontpage_elements.jpg');
+	background-repeat:repeat-x;
+	background-color: #776d6c;
+}
+
+.clear { clear: both; }
+
+.headline-img {
+	width: 150px;
+	height: 100px;
+	float: left;
+}
+
+#sport_name {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	width: 520px;
+	border-radius: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+}
+
+.headline-text {
+	font-weight: bold;
+	font-size: 18px;
+	float:left;
+	display: block;
+	width: 60%;
+	margin-left: 20px;
+}
+
+.headline-description {
+	font-size: 16px;
+	float: left;
+	width: 60%;
+	margin-left: 20px;
+}
+
+.headline {
+	float: left;
+	display: block;
+	margin-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	background-color: #cccccc;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 15px;
+	border-radius: 15px;
+}
