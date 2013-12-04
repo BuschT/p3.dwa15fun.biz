@@ -25,9 +25,9 @@ function showScores(sport){
 		$("#content").empty();
 		for (var x=0; x<obj.headlines.length; x++){
 			if (obj.headlines[x].images.length > 0){
-				$("#content").append("<div class='headline'><a href='"+obj.headlines[x].links.web.href+"'><img class='headline-img' src='"+obj.headlines[x].images[0].url+"'</img><div class='headline-text'>"+obj.headlines[x].headline+"</a></div><div class='headline-description'>"+obj.headlines[x].description+"</a></div><br /></headline>");
+				$("#content").append("<div class='headline'><a href='"+obj.headlines[x].links.web.href+"'><img class='headline-img' alt='thumbnail' src='"+obj.headlines[x].images[0].url+"'</img><div class='headline-text'>"+obj.headlines[x].headline+"</a></div><div class='headline-description'>"+obj.headlines[x].description+"</a></div><br /></headline>");
 			} else {
-				$("#content").append("<div class='headline'><a href='"+obj.headlines[x].links.web.href+"'><img class='headline-img' src='http://go.com/sites/default/files/espn.png'</img><div class='headline-text'>"+obj.headlines[x].headline+"</a></div><div class='headline-description'>"+obj.headlines[x].description+"</a></div></div><br /></headline>");
+				$("#content").append("<div class='headline'><a href='"+obj.headlines[x].links.web.href+"'><img class='headline-img' alt='thumbnail' src='http://go.com/sites/default/files/espn.png'</img><div class='headline-text'>"+obj.headlines[x].headline+"</a></div><div class='headline-description'>"+obj.headlines[x].description+"</a></div></div><br /></headline>");
 			}
 		}
 	});

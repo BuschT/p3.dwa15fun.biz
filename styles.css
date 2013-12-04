@@ -12,6 +12,10 @@ body {
 	float: left;
 }
 
+#content {
+	margin-top: 10px;
+}
+
 #sport_name {
 	font-weight: bold;
 	font-size: 22px;
