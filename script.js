@@ -8,6 +8,16 @@ $( document ).ready(function() {
 
 
 function showScores(sport){
+	console.log(sport);
+	if (sport === 'basketball/nba'){
+		$("#sport_name").text("NBA Headlines");
+	} else if (sport === 'baseball/mlb'){
+		$("#sport_name").text("MLB Headlines");
+	} else if (sport === 'football/nfl'){
+		$("#sport_name").text("NFL Headlines");
+	} else {
+		$("#sport_name").text("NHL Headlines");
+	}
 	$.ajax({
   		url: "http://api.espn.com/v1/sports/"+sport+"/news/headlines?apikey=9qf8zc8pq9n48f5td2z69nwt",
   		context: document.body
