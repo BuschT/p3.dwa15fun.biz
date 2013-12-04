@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+	//By default, load the NBA scores when page is ready
     showScores("basketball/nba");
     $( "#sport_select" ).val("basketball/nba");
     $( "#sport_select" ).change(function(obj) {
@@ -8,7 +9,7 @@ $( document ).ready(function() {
 
 
 function showScores(sport){
-	console.log(sport);
+	//Update the headline to the proper sport
 	if (sport === 'basketball/nba'){
 		$("#sport_name").text("NBA Headlines");
 	} else if (sport === 'baseball/mlb'){
@@ -18,6 +19,7 @@ function showScores(sport){
 	} else {
 		$("#sport_name").text("NHL Headlines");
 	}
+	//Make the Ajax call to retrieve that latest headlines for chosen sport
 	$.ajax({
   		url: "http://api.espn.com/v1/sports/"+sport+"/news/headlines?apikey=9qf8zc8pq9n48f5td2z69nwt",
   		context: document.body
